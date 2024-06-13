@@ -1,0 +1,32 @@
+/* BOUTON VALIDER ------------------------------- */
+/* Bouton choix */
+button {
+  background-color: #5c1c25; 
+  border: none;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+  box-shadow: 0 5px #351928;
+  }
+
+#choiceButton {
+  padding: 8px;
+}
+
+#wordButton, #sentenceButton {
+  margin-left: 15px;
+  padding: 5px;
+}
+
+/* Effet click */
+#choiceButton:active, #wordButton:active, #sentenceButton:active {
+  box-shadow: 0 2.5px #27171f;
+  transform: translateY(4px);
+  }
+
+
+

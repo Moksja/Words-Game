@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 99vw;
+    height: 80vh;
+    background: #37212d;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+}
+
+/* STYLE BLOC CHOIX */
+#choiceArea {
+    height: auto;
+    background-color: #191322;
+    border-radius: 20px;
+    box-shadow: -1px 2px 10px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.choice {
+    width: 100%;
+    height: auto;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.choiceWreapper {
+    padding: 20px;
+    margin-left: 20%;
+}
+
+
+/* STYLE BLOCS Mots&Phrases */
+#wordArea {
+    display: none;
+}
+
+#sentenceArea {
+    display: none;
+}
+
+.typeArea {
+    min-width: 30%;
+    height: 100px;
+    background-color: #191322;
+    border-radius: 20px;
+    box-shadow: -1px 2px 10px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    color: white;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.toWrite {
+    color: #fcd031;
+    text-shadow: 0px 0px 2px #ffc600;
+}
+
+.typeArea input {
+    display: block;
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0);
+}
+
+.textZone {
+    display: flex;
+    height: 30px;
+    padding-top: 30px;
+}
+
+#wordsButton, #sentencesButton {
+    width: 80px;
+    margin-left: 20px;
+}
+
+/* FEEDBACK */
+#feedbackArea {
+    display: none;
+}
+
+/* FINAL SCORE */
+#scoreArea {
+    display: none;
+    min-width: 30%;
+    height: 80px;
+    background-color: #27171f;
+    border-radius: 20px;
+    box-shadow: -1px 2px 10px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    color: white;
+    font-size: large;
+    flex-direction: column;
+    align-items: center; 
+}
+#scoreArea p {
+    margin-top: 30px;
+}

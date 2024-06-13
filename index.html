@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Words Game</title>
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Styles/customButtons.css">
+    <script src="Data/data.js" defer></script>
+    <script src="displayScript.js" defer></script>
+    <script src="gameScript.js" defer></script>
+    <script src="main.js" ></script>
+</head>
+
+<body>
+
+    <!-- Choose game -->
+    <div id="choiceArea">
+        <h1>À quoi voulez-vous vous entraîner ?</h1>
+        <div class="choice">
+            <div class="choiceWreapper">
+                <input type="radio" name="optionSource" id="words" value="1">
+                <label for="words">Mots</label>
+            </div>
+            <div class="choiceWreapper">
+                <input type="radio" name="optionSource" id="sentences" value="2">
+                <label for="sentences">Phrases</label>
+            </div>  
+        </div>
+        <button id="choiceButton" type="button">Valider</button>
+    </div>
+
+    <!-- if WORDS -->
+    <div id="wordArea" class="typeArea">
+        <label for="wordToWrite">Tapez le mot : </label> <label id="word" class="toWrite"></label>
+        <div class="textZone">
+            <input type="text" id="wordToWrite" name="wordToWrite" placeholder="Tapez ici" autocomplete="off" autofocus="true">
+            <button id="wordButton" type="button">Valider</button>
+        </div>
+    </div>
+
+    <!-- if SENTENCE -->
+    <div id="sentenceArea" class="typeArea">
+        <form>
+            <label for="sentenceToWrite">Tapez le mot : </label><label id="sentence" class="toWrite"></label>
+            <div class="textZone">
+                <input type="text" id="sentenceToWrite" name="sentenceToWrite" placeholder="Tapez ici" autocomplete="off" autofocus="true">
+                <button id="sentenceButton" type="button">Valider</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- FINAL SCORE -->
+     <div id="scoreArea">
+        <h3>Ouf ! Enfin terminé !</h3>
+        <p id="scoreText"></p>
+     </div>
+
+</body>
+
+</html>
